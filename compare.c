@@ -5,7 +5,7 @@ int main(void){
     int x = get_int("What's x? :  ");
     int y = get_int("What's y? : ");
 
-    if (x>y)
+    if (x<y)
     {
-        printf("The value of %d is greater than the value of %s",x,y);
+        printf('x is less than y ');
     }
