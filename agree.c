@@ -3,5 +3,15 @@
 
 int main(void)
 {
-    get_char("Do you agree ? ")
+    char c = get_char("Do you agree ? ");
+
+    if (c == 'y')
+    {
+        printf("Great");
+    }
+
+    else
+    {
+        printf("Damn thats crazy");
+    }
 }
