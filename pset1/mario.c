@@ -1,8 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
+int get_size(void);
+int print_grid(int size);
+
 int main(void)
 {
-    //Get size of Grid
+  int  get_size(void);
+  void print_grid(int n );
+
+}
+ int get_size(void)
+ {
     int n;
     do
     {
@@ -10,8 +18,11 @@ int main(void)
     }
     while(n<1);
 
-    // Prints grid of bricks
-    for (int i = 0; i<n; i++)
+ }
+
+void print_grid( int n)
+{
+     for (int i = 0; i<n; i++)
     {
         for(int j = 0; j<n; j++)
         {
@@ -19,5 +30,4 @@ int main(void)
         }
         printf("\n");
     }
-
 }
