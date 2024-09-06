@@ -17,6 +17,7 @@ int main(void)
         n = get_int("Size:");
     }
     while(n<1);
+    return n ;
 
  }
 
