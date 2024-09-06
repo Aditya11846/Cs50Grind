@@ -3,8 +3,8 @@
 
 int main(void)
 {
-    float x = get_long("value of x: ");
-    float y = get_long("value of y: ");
+    float x = get_float("value of x: ");
+    float y = get_float("value of y: ");
 
     printf("%f\n", x/y);
 }
