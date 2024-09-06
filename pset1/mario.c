@@ -2,6 +2,7 @@
 #include <cs50.h>
 int main(void)
 {
+    //Get size of Grid
     int n;
     do
     {
@@ -9,9 +10,10 @@ int main(void)
     }
     while(n<1);
 
+    // Prints grid of bricks
     for (int i = 0; i<n; i++)
     {
-        for(int j = 0; j<n; i++)
+        for(int j = 0; j<n; j++)
         {
             printf("#");
         }
