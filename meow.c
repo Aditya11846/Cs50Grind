@@ -1,12 +1,11 @@
 # include <stdio.h>
 # include <cs50.h>
 
-int main (void)
+int main(void)
 {
-    int counter = 0;
-    while (counter<3)
+    for (int i = 3; i>0; i--)
     {
         printf("meow\n");
-        counter++;
     }
 }
+
