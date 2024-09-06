@@ -6,7 +6,7 @@ int print_grid(int size);
 int main(void)
 {
   int  get_size(void);
-  void print_grid(int n );
+  void print_grid(int size );
 
 }
  int get_size(void)
@@ -21,11 +21,11 @@ int main(void)
 
  }
 
-void print_grid( int n)
+void print_grid( int size )
 {
-     for (int i = 0; i<n; i++)
+     for (int i = 0; i<size ; i++)
     {
-        for(int j = 0; j<n; j++)
+        for(int j = 0; j<size ; j++)
         {
             printf("#");
         }
