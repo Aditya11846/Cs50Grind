@@ -1,10 +1,16 @@
 #include <stdio.h>
-
+#include <cs50.h>
 int main(void)
 {
-    for(int i = 0;i<3;i++)
+    int n = get_int("What is the grid size you want? : ");
+    for(int i = 0; i<n; i++)
     {
-        printf("#\n");
+        for(int j=0; j<n ;j++)
+        {
+            printf("#");
+        }
+
+        printf("\n");
     }
 
 }
