@@ -2,8 +2,13 @@
 #include <cs50.h>
 int main(void)
 {
-    int n = get_int("What is the grid size you want? : ");
-    for(int i = 0; i<n; i++)
+    int n;
+    do
+    {
+        n = get_int("Size:");
+    }
+    while(n<1);
+
     {
         for(int j=0; j<n ;j++)
         {
