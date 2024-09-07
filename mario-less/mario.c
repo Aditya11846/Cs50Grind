@@ -8,6 +8,19 @@ int main (void)
 
 }
 
+
+
+void print_grid(int size)
+{
+    
+}
+
+
+
+
+
+
+
 int get_size(void)
 {
     int n;
