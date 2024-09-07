@@ -12,7 +12,10 @@ int main (void)
 
 void print_grid(int size)
 {
-    
+    while (int i < n)
+    {
+        printf("#")
+    }
 }
 
 
