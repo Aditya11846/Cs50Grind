@@ -9,8 +9,12 @@ int main(void)
 
     //Print the grid
 
+for(int j=0; j<Size; Size --)
+{
     for(int i= 0; i<Size; i++)
     {
         printf("#\n");
     }
+}
+
 }
