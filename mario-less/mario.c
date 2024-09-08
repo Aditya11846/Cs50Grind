@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <cs50>
+#include <cs50.h>
 
 int main(void)
 {
@@ -8,15 +8,15 @@ int main(void)
     {
         height = get_int("Enter Height:");
     }
-    while (height<1 || height>0);
+    while (height<1|| height>8 );
 
-    for(row = 0; row < height; row++)
+    for(int row = 0; row < height; row++)
     {
-        for (column = 0; column<height; column++)
+        for ( int column = 0; column<height; column++)
         {
-            printf('#');
+            printf("#");
         }
-        printf("/n")
+        printf("/n");
     }
 
 }
