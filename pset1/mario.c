@@ -14,7 +14,8 @@ for(int j=0; j<Size; j++)
     for(int i= 0; i<Size; i++)
     {
         printf("#");
-        int multi = 0
+
+        for (int multi = ; multi<Size; multi++)
     }
     printf("\n");
 }
