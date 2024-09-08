@@ -1,38 +1,16 @@
-#include <stdio.h>
-#include <cs50.h>
-
-int get_size(void);
-void print_grid(int size);
+# include <stdio.h>
+# include <cs50.h>
 
 int main(void)
 {
-    // Call get_size() to get the size
-    int size = get_size();
+    //get Size from user
 
-    // Call print_grid() to print the grid with the size
-    print_grid(size);
-}
+    int Size = get_int("What is the Size? : ");
 
-int get_size(void)
-{
-    int n;
-    do
+    //Print the grid
+
+    for(int i= 0; i<Size; i++)
     {
-        n = get_int("Size: ");
-    }
-    while(n < 1);
-    return n;
-}
-
-void print_grid(int size)
-{
-    for (int i = 0; i < size; i++)
-    {
-        for (int j = 0; j < size; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
+        printf("#\n");
     }
 }
-
