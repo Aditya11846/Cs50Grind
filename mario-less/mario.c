@@ -9,6 +9,6 @@ int main(void)
          int height = get_int("Enter Height of Pyramid: ");
     }
 
-    while(height<1 || height>8)
+    while(height<1 || height>8);
 
 }
