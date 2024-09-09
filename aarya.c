@@ -2,5 +2,5 @@
 
 int main(void)
 {
-    printf("Hi I'm a dog");
+    printf("Hi I'm a playboi carti\n");
 }
