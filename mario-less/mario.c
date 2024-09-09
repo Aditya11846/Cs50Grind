@@ -7,6 +7,7 @@ int main(void)
     int height;
     int row;
     int column;
+    int space;
     do
     {
          height = get_int("Enter Height of Pyramid: ");
@@ -18,6 +19,8 @@ int main(void)
     {
         for(column = 0; column <= row; column++)
         {
+            for(space = height; space <= height; space--)
+            printf(".");
             printf("#");
         }
         printf("\n");
