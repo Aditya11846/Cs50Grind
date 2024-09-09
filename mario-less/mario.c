@@ -5,6 +5,8 @@
 int main(void)
 {
     int height;
+    int row;
+    int column;
     do
     {
          height = get_int("Enter Height of Pyramid: ");
@@ -12,6 +14,6 @@ int main(void)
 
     while(height<1 || height>8);
 
-    for()
+    for(int)
 
 }
