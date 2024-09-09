@@ -19,7 +19,7 @@ int main(void)
     {
         for(column = 0; column <= row; column++)
         {
-            for(space = 0  ; space <= height; space++)
+            for(space = 0  ; space <= row++; space++)
             printf(".");
             printf("#");
         }
