@@ -15,13 +15,16 @@ int main(void)
 
     while(height<1 || height>8);
 
+
+
     for (row = 0 ; row < height; row++)
     {
         for(column = 0; column <= row; column++)
         {
-            for(space = height-1  ; space >= row; space--)
-            printf(".");
+
+
             printf("#");
+
         }
 
         printf("\n");
