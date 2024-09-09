@@ -12,9 +12,13 @@ int main(void)
 
     for(int row = 0; row < height; row++)
     {
-        for ( int column = 0; column<height; column++)
+        for ( int hash = 0; int column = 0; column<height; column++)
         {
-            printf("#");
+            if (column = hash)
+            {
+                printf("#");
+            }
+
         }
         printf("\n");
     }
