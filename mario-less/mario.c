@@ -4,9 +4,10 @@
 
 int main(void)
 {
+    int height;
     do
     {
-         int height = get_int("Enter Height of Pyramid: ");
+         height = get_int("Enter Height of Pyramid: ");
     }
 
     while(height<1 || height>8);
