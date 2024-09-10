@@ -25,4 +25,7 @@ int main(void)
         printf("%d,%d\n",q1,q2);
     }
     else
+    {
+        q1 = q2;
+    }
 }
