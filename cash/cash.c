@@ -3,12 +3,13 @@
 
 int main(void)
 {
+    int change;
     do
     {
-        int change;
+
         change = get_int("What is the change ? ");
     }
-    while(change<1)
+    while(change<1);
 
     int quarters = change/25;
     change = change%25;
