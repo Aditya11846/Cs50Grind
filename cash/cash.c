@@ -10,5 +10,5 @@ int main(void)
     price = get_int("What is the Price: ");
     change = paid- price;
 
-    while()
+    
 }
