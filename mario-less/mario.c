@@ -8,7 +8,7 @@ int main(void)
     int row;
     int space;
 
-    // Get height input from the user with validation (1 <= height <= 8)
+    // Get height input from the user
     do
     {
         height = get_int("Enter height : ");
@@ -19,12 +19,12 @@ int main(void)
     for (row = 0; row < height; row++)
     {
         // Inner loop for spaces
-        for (space = 0; space < height - row - 1; space++) // Fixed the extra space issue
+        for (space = 0; space < height - row - 1; space++)
         {
             printf(" ");
         }
 
-        // Inner loop for hashes
+        //inner loop for hashes 
         for (column = 0; column <= row; column++)
         {
             printf("#");
