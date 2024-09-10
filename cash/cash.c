@@ -18,8 +18,6 @@ int main(void)
     int q4 = change/1;
     int small = 0;
 
-    do
-    {
 
     if(q1<q2)
     {
@@ -47,9 +45,6 @@ int main(void)
         small = q4;
     }
 
-    }
 
-    while(change%q1 == 0||change%q2 == 0||change%q3 == 0||change%q4 == 0);
-
-    printf("%d\n",q1);
+    printf("%d\n",small);
 }
