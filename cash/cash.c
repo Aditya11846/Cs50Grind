@@ -20,9 +20,9 @@ int main(void)
     int nickel = change/5;
     change = change%5;
 
-    int penny = change/5;
-    change= penny%5;
+    int penny = change/1;
+    change= penny%1;
 
     int final_change = quarters + dime + nickel + penny;
-    printf("%d\n", final_change);
+    printf("The Number of coins needed are %d\n", final_change);
 }
