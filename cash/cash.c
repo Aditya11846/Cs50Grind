@@ -17,15 +17,31 @@ int main(void)
     int q3 = change/5;
     int q4 = change/1;
 
-    printf("%d %d %d %d\n", q1,q2,q3,q4);
-
     if(q1<q2)
     {
         q2 = q1;
-        printf("%d,%d\n",q1,q2);
+
     }
     else
     {
         q1 = q2;
     }
+    if(q1<q3)
+    {
+        q3 = q1;
+    }
+    else
+    {
+        q1 = q3;
+    }
+    if(q1<q4)
+    {
+        q4 =q1;
+    }
+    else
+    {
+        q1 =q4;
+    }
+
+    printf("%d\n",q1);
 }
