@@ -33,7 +33,6 @@ int main(void)
         for (width = 0 ; width <= 1; width++ )
         {
             printf(".");
-            
         }
 
 
