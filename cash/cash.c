@@ -12,11 +12,12 @@ int main(void)
 
     change = paid- price;
 
-    int r1 = change%25;
-    int r2 = change%10;
-    int r3 = change%5;
-    int r4 = change%1;
+    int q1 = change/25;
+    int q2 = change/10;
+    int q3 = change/5;
+    int q4 = change/1;
 
-    printf("%d %d %d %d\n",r1,r2,r3,r4);
+    printf("%d %d %d %d\n", q1,q2,q3,q4);
+
 
 }
