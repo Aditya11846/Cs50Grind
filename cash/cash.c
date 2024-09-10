@@ -7,5 +7,5 @@ int main(void)
     change = get_int("What is the change ? ");
 
     int quarters = change/25;
-    quarters = 
+    change = change%25
 }
