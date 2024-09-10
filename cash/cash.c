@@ -3,11 +3,12 @@
 
 int main(void)
 {
-    int price;
-    int paid;
-    int change;
+    int price=0;
+    int paid=0;
+    int change=0;
 
-    price = get_int("What is the Price ");
-    
+    price = get_int("What is the Price: ");
+    change = paid- price;
 
+    while()
 }
