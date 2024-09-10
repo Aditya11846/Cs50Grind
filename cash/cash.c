@@ -13,7 +13,7 @@ int main(void)
     int q4 = change/1;
     int small = 0;
 
-    if(change%q1 == 0 || change%q2 == 0 || change%q3 == 0 || change%q4 == 0)
+    if(change%q1 == 0 || change%q2 == 0 || change%q3 == 0  )
     {
 
     if(q1<q2)
@@ -45,8 +45,9 @@ int main(void)
 
     printf("%d\n",small);
     }
-
-    printf("Sorry change not available");
-
+    else
+    {
+        printf("Sorry change not available");
+    }
 
 }
