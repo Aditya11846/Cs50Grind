@@ -3,6 +3,11 @@
 
 int main(void)
 {
-    int price
+    int price;
+    int paid;
+    int change;
+
     price = get_int("What is the Price ");
+    
+
 }
