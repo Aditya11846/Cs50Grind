@@ -16,31 +16,32 @@ int main(void)
     int q2 = change/10;
     int q3 = change/5;
     int q4 = change/1;
+    int small = 0;
 
     if(q1<q2)
     {
-        q2 = q1;
+        small = q1;
 
     }
     else
     {
-        q1 = q2;
+        small = q2;
     }
     if(q1<q3)
     {
-        q3 = q1;
+        small = q1;
     }
     else
     {
-        q1 = q3;
+        small = q3;
     }
     if(q1<q4)
     {
-        q4 =q1;
+        small = q1;
     }
     else
     {
-        q1 =q4;
+        small = q4;
     }
 
     printf("%d\n",q1);
