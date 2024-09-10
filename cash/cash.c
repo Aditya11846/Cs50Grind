@@ -21,7 +21,8 @@ int main(void)
 
     if(q1<q2)
     {
-        q1 = q2;
-        printf("%d",q2);
+        q2 = q1;
+        printf("%d,%d\n",q1,q2);
     }
+    else
 }
