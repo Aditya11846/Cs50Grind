@@ -3,14 +3,9 @@
 
 int main(void)
 {
-    int price=0;
-    int paid=0;
-    int change=0;
+    int change;
 
-    price = get_int("What is the Price: ");
-    paid = get_int("How much are you paying: ");
-
-    change = price-paid;
+    change = get_int("What is the Change: ");
 
     int q1 = change/25;
     int q2 = change/10;
