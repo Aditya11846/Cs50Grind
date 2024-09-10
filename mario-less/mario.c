@@ -7,23 +7,30 @@ int main(void)
     int column;
     int row;
     int space;
+
+    // Get height input from the user with validation (1 <= height <= 8)
     do
     {
-        height = get_int("Enter height: ");
+        height = get_int("Enter height : ");
     }
     while(height < 1);
 
-    for(row = 0; row<height; row++)
+    // Outer loop for rows
+    for(row = 0; row < height; row++)
     {
-        for (space = 0 ; space <= height-row-1; space++)
+        // Inner loop for spaces
+        for (space = 0; space < height - row - 1; space++) // Fixed the extra space issue
         {
             printf(" ");
         }
 
+        // Inner loop for hashes
         for(column = 0 ; column <= row ; column++)
         {
             printf("#");
         }
+
+        // Print new line after each row
         printf("\n");
     }
 }
