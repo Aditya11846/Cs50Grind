@@ -3,10 +3,10 @@
 
 int main(void)
 {
+    int height;
     do
     {
-        int height = get_int("Enter Height:");
+        height = get_int("Enter height: ");
     }
-    while(height<1);
-
+    while(height < 1);
 }
