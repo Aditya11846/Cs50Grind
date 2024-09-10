@@ -7,6 +7,7 @@ int main(void)
     int column;
     int row;
     int space;
+    int width;
 
     // Get height input from the user
     do
@@ -28,6 +29,10 @@ int main(void)
         for (column = 0; column <= row; column++)
         {
             printf("#");
+        }
+        for (width = 0 ; width <= 1; width++ )
+        {
+            printf(".");
         }
 
 
