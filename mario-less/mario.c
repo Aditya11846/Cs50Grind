@@ -24,11 +24,12 @@ int main(void)
             printf(" ");
         }
 
-        //inner loop for hashes 
+        //inner loop for hashes
         for (column = 0; column <= row; column++)
         {
             printf("#");
         }
+
 
         // Print new line after each row
         printf("\n");
