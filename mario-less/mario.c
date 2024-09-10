@@ -1,5 +1,5 @@
-# include <stdio.h>
-# include <cs50.h>
+#include <cs50.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -13,10 +13,10 @@ int main(void)
     {
         height = get_int("Enter height : ");
     }
-    while(height < 1);
+    while (height < 1);
 
     // Outer loop for rows
-    for(row = 0; row < height; row++)
+    for (row = 0; row < height; row++)
     {
         // Inner loop for spaces
         for (space = 0; space < height - row - 1; space++) // Fixed the extra space issue
@@ -25,7 +25,7 @@ int main(void)
         }
 
         // Inner loop for hashes
-        for(column = 0 ; column <= row ; column++)
+        for (column = 0; column <= row; column++)
         {
             printf("#");
         }
