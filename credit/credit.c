@@ -21,7 +21,6 @@ int main(void)
     }
     printf("The number of digits are: %d\n", length);
     }
-    }
 
     while(length!=13&&length!=15&&length!=16);
 }
