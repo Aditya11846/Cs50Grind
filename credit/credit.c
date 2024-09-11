@@ -27,7 +27,7 @@ int main(void)
     // Call the function to get the length of the card number
     int length = get_card_length(card);
     }
-    while(length!== 13)
+    while(length!= 13 || length!=16 || length!=15);
 
     // Print the result
     printf("Number of digits: %d\n", length);
