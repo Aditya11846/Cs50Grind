@@ -54,7 +54,8 @@ int calculate_luhn_checksum(long card_number)
     while(card_number>0)
     {
         int current_digit = number%10;
+        
     }
-    
+
 }
 
