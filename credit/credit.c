@@ -73,7 +73,7 @@ int main(void)
         first_two_digits /= 10;
     }
 
-    if (length == 15 && first_two_digits == 34 || first_two_digits == 37)
+    if ((length == 15 && first_two_digits == 34)|| first_two_digits == 37)
     {
         printf("AMEX\n");
     }
@@ -81,7 +81,7 @@ int main(void)
     {
         printf("MASTERCARD\n");
     }
-    else if ((length == 13 || length == 16) && first_digit == 4))
+    else if ((length == 13 || length == 16) && first_digit == 4)
     {
         printf("VISA\n");
     }
