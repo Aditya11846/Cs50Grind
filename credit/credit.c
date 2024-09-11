@@ -50,6 +50,10 @@ int calculate_luhn_checksum(long card_number)
 {
     int sum;
     int digit_count;
-    
+
+    while(card_number>0)
+    {
+        
+    }
 }
 
