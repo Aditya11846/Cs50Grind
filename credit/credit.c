@@ -6,16 +6,15 @@ int main(void)
     int card;
     card = get_long("Enter your card number: \n");
 
-    long card_length = 0;
-    int q = card_length/10;
-    int r = card_length%10;
+    int card_len = 0;
 
-    for(card_length = 0 ; r > 0; card_length++)
+    long temp =  card;
+
+    while(temp != 0)
     {
-        q=card/10;
-        r=card%10;
+        temp = temp/10;
+        card_len++;
     }
-    printf("%ld", card_length);
 
-
+    printf("%d\n", card_len);
 }
