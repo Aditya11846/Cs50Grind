@@ -14,48 +14,40 @@ int get_length(long number)
     return length;
 }
 
+// Function to check the Luhn checksum
 bool check_sum(long number)
 {
     int total = 0;
     bool var = true;
-    while()
+
+    while (number > 0)
     {
         if (var == true)
         {
-            total += number%10;
-            number/= 10;
+            total += number % 10;
+            number /= 10;
             var = false;
         }
-
         else
         {
-            buffer = num%10;
-            buffer*=2;
-            if(buffer>10)
+            int buffer = (number % 10) * 2;
+            if (buffer >= 10)
             {
-                total += buffer/10;
-                total += buffer%10;
+                total += buffer / 10;
+                total += buffer % 10;
             }
             else
             {
-                total+=buffer;
+                total += buffer;
             }
+            number /= 10;
             var = true;
         }
-
     }
+
+    // Check if total sum ends in 0
+    return (total % 10 == 0);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 int main(void)
 {
@@ -69,8 +61,17 @@ int main(void)
         // Use the function to calculate the length of the card number
         length = get_length(number);
 
-    } while(length != 13 && length != 15 && length != 16);
+    } while (length != 13 && length != 15 && length != 16);
 
     printf("The number of digits are: %d\n", length);
 
+    // Check if the card number is valid using the checksum function
+    if (check_sum(number))
+    {
+        printf("The card number is valid!\n");
+    }
+    else
+    {
+        printf("The card number is invalid!\n");
+    }
 }
