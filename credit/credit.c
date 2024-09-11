@@ -81,7 +81,7 @@ int main(void)
     {
         printf("MASTERCARD\n");
     }
-    else if ((length == 13 || length == 16) && first_digit == 4)
+    else if ((length == 13 || length == 16) && first_digit == 4))
     {
         printf("VISA\n");
     }
