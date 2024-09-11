@@ -13,7 +13,7 @@ int main(void)
     //Checking the length of the given card number//
 
     long temp = number;
-    int length = 0;
+    length = 0;
     while(temp!=0)
     {
         temp = temp/10;
