@@ -42,5 +42,6 @@ int main(void)
     // Print the valid card number and its length
     printf("Valid card number with %d digits.\n", length);
 
- 
 }
+
+
