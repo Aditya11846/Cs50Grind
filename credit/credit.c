@@ -6,7 +6,7 @@ int main(void)
     int card;
     card = get_long("Enter your card number: \n");
 
-    long length_counter;
+    long length_counter = 1;
     int r;
     int q;
 
@@ -14,7 +14,9 @@ int main(void)
     {
         q = card/10 ;
         r = card%10;
+        length_counter++;
     }
+    printf("%d" , length_counter);
 
 
 }
