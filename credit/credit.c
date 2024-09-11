@@ -1,25 +1,32 @@
-#include<stdio.h>
-#include<cs50.h>
+#include <stdio.h>
+#include <cs50.h>
+
+// Function to calculate the number of digits in a card number
+int get_card_length(long card_number)
+{
+    int card_length = 0;
+    long temp = card_number;
+
+    // Loop to count the digits
+    while (temp != 0)
+    {
+        temp = temp / 10;  // Remove the last digit
+        card_length++;     // Increment the count
+    }
+
+    return card_length;
+}
 
 int main(void)
 {
-    int card;
-    card = get_long("Enter your card number: \n");
+    // Get the card number from the user
+    long card = get_long("Enter your card number: \n");
 
-    int card_len = 0;
+    // Call the function to get the length of the card number
+    int length = get_card_length(card);
 
-    long temp =  card;
+    // Print the result
+    printf("Number of digits: %d\n", length);
 
-    while(temp != 0)
-    {
-        temp = temp/10;
-        card_len++;
-    }
-
-    printf("%d\n", card_len);
-}
-
-int get_card_length(long card)
-{
-
+    return 0;
 }
