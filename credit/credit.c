@@ -33,8 +33,8 @@ bool check_sum(long number)
             buffer*=2;
             if(buffer>10)
             {
-                split = buffer;
-                split = buffer/10 + buffer%10 ;
+                total += buffer/10;
+                total += buffer%10;
             }
         }
 
