@@ -8,6 +8,12 @@ int main(void)
     long temp_number = number;
     long length_count = 0;
 
-    temp_number
+    while(temp_number!= 0)
+    {
+        temp_number = number/10;
+    }
+
+
+
 
 }
