@@ -3,10 +3,12 @@
 
 int main(void)
 {
+    int length;
+    long number;
+
     do
     {
-
-    long number = get_long("What is the credit card number: ");
+    number = get_long("What is the credit card number: ");
 
     //Checking the length of the given card number//
 
@@ -19,5 +21,7 @@ int main(void)
     }
     printf("The number of digits are: %d\n", length);
     }
-    while(length!=13||length!=15||length!=16);
+    }
+
+    while(length!=13&&length!=15&&length!=16);
 }
