@@ -26,7 +26,11 @@ bool check_sum(long number)
             number/= 10;
             var = false;
         }
-        
+
+        else
+        {
+            
+        }
 
     }
 }
