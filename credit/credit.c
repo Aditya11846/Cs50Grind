@@ -48,12 +48,8 @@ int main(void)
 
 int calculate_luhn_checksum(long card_number)
 {
-    int digit_count = 0;
-    long temp_number = card_number;
-
-    while (temp_number > 0)
-    {
-        temp_number/10
-    }
+    int sum;
+    int digit_count;
+    
 }
 
