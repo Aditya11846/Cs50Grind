@@ -46,5 +46,9 @@ int main(void)
 
 }
 
-int calculate_luhn_checksum(long )
+int calculate_luhn_checksum(long card_number)
+{
+    int digit_count = 0;
+    
+}
 
