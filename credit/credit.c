@@ -18,3 +18,8 @@ int main(void)
 
     printf("%d\n", card_len);
 }
+
+int get_card_length(long card)
+{
+
+}
