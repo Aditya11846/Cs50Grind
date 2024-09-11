@@ -5,11 +5,11 @@ int main(void)
 {
     long number = get_long("Enter the number\n");
 
-    int length;
-    int temp_number;
+    long temp_number = number;
+    int length_count;
 
-    while(length>0)
+    while(temp_number>0)
     {
-        
+        temp_number/10
     }
 }
