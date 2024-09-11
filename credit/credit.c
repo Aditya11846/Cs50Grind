@@ -6,17 +6,23 @@ int main(void)
     int card;
     card = get_long("Enter your card number: \n");
 
-    long length_counter = 1;
+    long length_counter;
     int r;
     int q;
 
-    for(r=0; r > 0 ; r++)
+
+    for(length_counter = 0;length_counter> card ;length_counter++)
+    {
+        for(r=0; r > 0 ; r++)
     {
         q = card/10 ;
         r = card%10;
-        length_counter++;
+
     }
-    printf("%ld" , length_counter);
+
+    }
+     printf("%ld" , length_counter);
+
 
 
 }
