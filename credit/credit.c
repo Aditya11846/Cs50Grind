@@ -10,7 +10,7 @@ int main(void)
 
     while(temp_number != 0)
     {
-        temp_number = number/10;
+        temp_number = number%10;
         length_count++;
     }
     printf("%d",length_count);
