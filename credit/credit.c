@@ -36,6 +36,10 @@ bool check_sum(long number)
                 total += buffer/10;
                 total += buffer%10;
             }
+            else
+            {
+                total+=buffer;
+            }
         }
 
     }
