@@ -3,5 +3,8 @@
 
 int main(void)
 {
+    int card;
+    card = get_long("Enter your card number: \n");
+
     
 }
