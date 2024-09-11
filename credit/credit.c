@@ -5,10 +5,9 @@
 int get_length(long number)
 {
     int length = 0;
-    long temp = number;
-    while (temp != 0)
+    while (number > 0)
     {
-        temp = temp / 10;
+        number /= 10;
         length++;
     }
     return length;
@@ -18,31 +17,22 @@ int get_length(long number)
 bool check_sum(long number)
 {
     int total = 0;
-    bool var = true;
+    bool double_digit = false;
 
     while (number > 0)
     {
-        if (var)
+        int digit = number % 10;
+        if (double_digit)
         {
-            total += number % 10;
-            number /= 10;
-            var = false;
-        }
-        else
-        {
-            int buffer = (number % 10) * 2;
-            if (buffer >= 10)
+            digit *= 2;
+            if (digit > 9)
             {
-                total += buffer / 10;
-                total += buffer % 10;
+                digit -= 9; // Same as adding the digits of the product
             }
-            else
-            {
-                total += buffer;
-            }
-            number /= 10;
-            var = true;
         }
+        total += digit;
+        double_digit = !double_digit;
+        number /= 10;
     }
 
     return (total % 10 == 0);
@@ -50,7 +40,7 @@ bool check_sum(long number)
 
 int main(void)
 {
-    long number = get_long("What is the credit card number: ");
+    long number = get_long("Number: ");
     int length = get_length(number);
 
     // Check if the card number is valid using the checksum function
@@ -73,11 +63,11 @@ int main(void)
         first_two_digits /= 10;
     }
 
-    if ((length == 15 && first_two_digits == 34)|| first_two_digits == 37)
+    if (length == 15 && (first_two_digits == 34 || first_two_digits == 37))
     {
         printf("AMEX\n");
     }
-    else if (length == 16 && first_two_digits >= 51 && first_two_digits <= 55)
+    else if (length == 16 && (first_two_digits >= 51 && first_two_digits <= 55))
     {
         printf("MASTERCARD\n");
     }
