@@ -8,9 +8,9 @@ int main(void)
     int temp_number = number;
     int length_count = 0;
 
-    while(temp_number != 0)
+    for()
     {
-        temp_number = number%10;
+        temp_number = number/10;
         length_count++;
     }
     printf("%d",length_count);
