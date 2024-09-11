@@ -29,7 +29,8 @@ bool check_sum(long number)
 
         else
         {
-            
+            buffer = num%10;
+            buffer*=2;
         }
 
     }
