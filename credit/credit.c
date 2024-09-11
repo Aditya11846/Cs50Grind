@@ -20,7 +20,7 @@ bool check_sum(long number)
     while()
     {
         total += number%10;
-        number/= 
+        number/= 10;
     }
 }
 
