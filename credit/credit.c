@@ -8,12 +8,13 @@ int main(void)
 
     long length_counter;
     int r;
+    int q;
 
     for(r=0; r > 0 ; r++)
     {
-        card/10 = q;
-        card%10 = r;
+        q = card/10 ;
+        r = card%10;
     }
-    printf("&d",r);
+
 
 }
