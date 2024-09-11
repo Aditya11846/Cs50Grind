@@ -14,6 +14,27 @@ int get_length(long number)
     return length;
 }
 
+bool check_sum(long number)
+{
+    int total = 0;
+    while()
+    {
+        total += number%10;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 int main(void)
 {
     int length;
@@ -29,4 +50,5 @@ int main(void)
     } while(length != 13 && length != 15 && length != 16);
 
     printf("The number of digits are: %d\n", length);
+
 }
