@@ -7,8 +7,8 @@ int main(void)
     card = get_long("Enter your card number: \n");
 
     long card_length;
-    int q
-    int r
+    int q;
+    int r;
 
-    
+
 }
