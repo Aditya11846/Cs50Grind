@@ -17,10 +17,17 @@ int get_length(long number)
 bool check_sum(long number)
 {
     int total = 0;
+    bool var = true;
     while()
     {
-        total += number%10;
-        number/= 10;
+        if (var == true)
+        {
+            total += number%10;
+            number/= 10;
+            var = false;
+        }
+        
+
     }
 }
 
