@@ -34,7 +34,7 @@ bool check_sum(long number)
             if(buffer>10)
             {
                 split = buffer;
-                
+                split = buffer/10 + buffer%10 ;
             }
         }
 
