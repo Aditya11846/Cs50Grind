@@ -40,6 +40,7 @@ bool check_sum(long number)
             {
                 total+=buffer;
             }
+            var = true;
         }
 
     }
