@@ -19,23 +19,28 @@ int get_card_length(long card_number)
 
 int main(void)
 {
-    
     long card;
-    long length;
+    int length;
+
+    // Keep asking for input until the length is 13, 15, or 16
     do
     {
-         // Get the card number from the user
-    long card = get_long("Enter your card number: \n");
+        // Get the card number from the user
+        card = get_long("Enter your card number: \n");
 
-    // Call the function to get the length of the card number
-    int length = get_card_length(card);
+        // Call the function to get the length of the card number
+        length = get_card_length(card);
 
-    // Print the result
-    printf("Number of digits: %d\n", length);
+        // Check if the length is not 13, 15, or 16
+        if (length != 13 && length != 15 && length != 16)
+        {
+            printf("Invalid card length! Please enter a card number with 13, 15, or 16 digits.\n");
+        }
 
-    }
-   while (length != 13 && length != 15 && length != 16);
+    } while (length != 13 && length != 15 && length != 16);
 
+    // Print the valid card number and its length
+    printf("Valid card number with %d digits.\n", length);
 
-
+ 
 }
