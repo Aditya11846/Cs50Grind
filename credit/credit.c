@@ -16,7 +16,7 @@ int main(void)
         r = card%10;
         length_counter++;
     }
-    printf("%d" , length_counter);
+    printf("%ld" , length_counter);
 
 
 }
