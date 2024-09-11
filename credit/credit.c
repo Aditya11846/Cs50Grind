@@ -5,7 +5,7 @@ int main(void)
 {
     long number = get_long("Enter the number\n");
 
-    long temp_number = number;
+    int temp_number = number;
     int length_count = 0;
 
     while(temp_number != 0)
