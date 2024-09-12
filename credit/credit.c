@@ -21,7 +21,8 @@ int main(void)
 
     int temp_check = number;
     int digit_count = 0;
-    int digit;
+    int digit = 0 ;
+    int twice = 1;
     int sum = 0;
 
     temp_check /= 10;
@@ -30,8 +31,9 @@ int main(void)
 
     if(digit_count%2 != 0)
     {
-        sum *= 2;
-        
+        twice *= 2;
+        sum += twice;
+
     }
 }
 
