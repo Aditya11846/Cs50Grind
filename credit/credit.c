@@ -11,10 +11,11 @@ int main(void)
 bool length_calculator ( long number)
 {
     int temp = number;
-    int length;
+    int length = 0;
 
     while()
     {
-        temp /= 10
+        temp /= 10;
+        length++;
     }
 }
