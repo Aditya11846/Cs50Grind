@@ -49,7 +49,6 @@ int main(void)
         printf("INVALID\n");
         return 0;
     }
-
     // Determine card type
     int first_digit = number;
     while (first_digit >= 10)
