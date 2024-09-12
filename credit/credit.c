@@ -44,7 +44,7 @@ int main(void)
         }
 
 
-
+//Logic kinda okay use better variable names.
     }
 }
 
