@@ -27,6 +27,11 @@ int main(void)
     temp_check /= 10;
     digit = temp_check%10;
     digit_count++;
-    
+
+    if(digit_count%2 != 0)
+    {
+        sum *= 2;
+        
+    }
 }
 
