@@ -5,7 +5,15 @@ int main(void)
 {
     long number = get_long("Please enter your card number");
 
-    int 
+
 }
 
+bool length_calculator ( long number)
+{
+    int temp = number;
+    int length;
 
+    while()
+    temp /=10;
+    length++;
+}
