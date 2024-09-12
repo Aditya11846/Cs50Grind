@@ -21,7 +21,7 @@ int main(void)
 
     int temp_check = number;
 
-    number
+    temp_check 
 
 }
 
