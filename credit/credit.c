@@ -19,32 +19,13 @@ int main(void)
 
     //Luhn's algorithm Checksum//
 
-    int temp_check = number;
+    long temp_check = number;
     int digit_count = 0;
-    int digit = 0 ;
-    int twice = 1;
     int sum = 0;
+    bool double_digit = false;
 
-    while()
-    temp_check /= 10;
-    digit = temp_check%10;
-    digit_count++;
-
-    if(digit_count%2 != 0)
+    while(temp_check>0)
     {
-        digit*=2;
-
-        if (digit>9)
-        {
-            int first;
-            first = digit/10;
-            digit%10;
-            digit += first;
-            sum += digit;
-        }
-
-
-//Logic kinda okay use better variable names.
+        int digit = 
     }
-}
 
