@@ -19,7 +19,9 @@ int main(void)
 
     //Luhn's algorithm Checksum//
 
-    
+    int temp_check = number;
+
+    number
 
 }
 
