@@ -23,7 +23,7 @@ int main(void)
     ind digit_count = 0;
     int sum = 0;
 
-    temp_check
+    temp_check /= 10
 
 }
 
