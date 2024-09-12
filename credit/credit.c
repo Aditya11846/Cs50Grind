@@ -14,6 +14,7 @@ bool length_calculator ( long number)
     int length;
 
     while()
-    temp /=10;
-    length++;
+    {
+        temp /= 10
+    }
 }
