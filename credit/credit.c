@@ -31,8 +31,7 @@ int main(void)
 
     if(digit_count%2 != 0)
     {
-        twice *= 2;
-        sum += twice;
+        digit*=2;
 
     }
 }
