@@ -30,7 +30,19 @@ int main(void)
 
         if(double_digit == true)
         {
-            digit
+            digit *= 2;
+
+            if(digit>9)
+            {
+                sum += (digit/10) + (digit%10);
+            }
+
+            else
+            {
+                sum+= digit
+            }
+
+            
         }
     }
 
