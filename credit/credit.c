@@ -26,6 +26,7 @@ int main(void)
 
     while(temp_check>0)
     {
-        int digit = 
+        int digit = temp_check%10;
+        
     }
 
