@@ -40,6 +40,7 @@ int main(void)
             first = digit/10;
             digit%10;
             digit += first;
+            sum += digit;
         }
 
 
