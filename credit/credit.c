@@ -33,6 +33,11 @@ int main(void)
     {
         digit*=2;
 
+        if (digit>9)
+        {
+            digit = digit
+        }
+
     }
 }
 
