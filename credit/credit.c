@@ -25,6 +25,7 @@ int main(void)
     int twice = 1;
     int sum = 0;
 
+    while()
     temp_check /= 10;
     digit = temp_check%10;
     digit_count++;
@@ -35,8 +36,13 @@ int main(void)
 
         if (digit>9)
         {
-            digit = digit
+            int first;
+            first = digit/10;
+            digit%10;
+            digit += first;
         }
+
+
 
     }
 }
