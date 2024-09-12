@@ -20,8 +20,10 @@ int main(void)
     //Luhn's algorithm Checksum//
 
     int temp_check = number;
+    ind digit_count = 0;
+    int sum = 0;
 
-    temp_check 
+    temp_check
 
 }
 
