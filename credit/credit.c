@@ -27,6 +27,10 @@ int main(void)
     while(temp_check>0)
     {
         int digit = temp_check%10;
-        
+
+        if(double_digit == true)
+        {
+            digit
+        }
     }
 
