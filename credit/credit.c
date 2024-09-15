@@ -62,9 +62,8 @@ int main(void)
         printf("The number is not valid according to Luhn's algorithm.\n");
     }
 
- 
+
 
     // Card Type Identifier//
-
-
+    
 }
