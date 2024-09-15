@@ -3,10 +3,10 @@
 
 int main(void)
 {
-    int length=0;
+    int digit_counter=0;
     long input;
 
-    // Prompt for input and check the length
+    // Prompt for input and check the digit_counter
     input = get_long("Please enter your number here:\n ");
 
     // Luhn's Checksum Calculation
@@ -42,22 +42,17 @@ int main(void)
     }
 
     // Check if the total sum is a multiple of 10 (Luhn's Algorithm)
-    if (sum % 10 != 0)
+    if (sum % 10 != 0 && digit_counter != 13 && digit_counter != 15 && digit_counter != 16)
     {
         printf("INVALID\n");
         return 0;  // Exit, but with a code 0, as expected
-    }
-    if (length != 13 && length != 15 && length != 16)
-    {
-        printf("INVALID\n");
-        return 0;  // Exit early if length is invalid
     }
 
     // If valid, identify the card type
     printf("The number is valid according to Luhn's algorithm.\n");
 
     // Card Type Identifier
-    if (length == 15)
+    if (digit_counter == 15)
     {
         long amex = input / 10000000000000;
         if (amex == 34 || amex == 37)
@@ -69,7 +64,7 @@ int main(void)
             printf("INVALID\n");
         }
     }
-    else if (length == 16)
+    else if (digit_counter == 16)
     {
         long mastercard = input / 100000000000000;
         if (mastercard >= 51 && mastercard <= 55)
@@ -89,7 +84,7 @@ int main(void)
             }
         }
     }
-    else if (length == 13)
+    else if (digit_counter == 13)
     {
         long visa = input / 1000000000000;
         if (visa == 4)
@@ -103,7 +98,7 @@ int main(void)
     }
     else
     {
-        // This handles unexpected card lengths, just in case
+        // This handles unexpected card digit_counters, just in case
         printf("INVALID\n");
     }
 
