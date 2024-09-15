@@ -3,12 +3,15 @@
 
 int main(void)
 {
+    int length;
+    long input;
+
     do
     {
 
-    long input = get_long("Please enter your number here:\n ");
+    input = get_long("Please enter your number here:\n ");
     long temp = input;
-    int length = 0;
+    length = 0;
 
     while(temp!= 0)
     {
