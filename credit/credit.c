@@ -70,6 +70,10 @@ int main(void)
         {
             printf("AMEX\n");
         }
+        else
+        {
+            printf("INVALID\n");
+        }
     }
     else if (length == 16)
     {
@@ -85,6 +89,10 @@ int main(void)
             {
                 printf("VISA\n");
             }
+            else
+            {
+                printf("INVALID\n");
+            }
         }
     }
     else if (length == 13)
@@ -94,6 +102,15 @@ int main(void)
         {
             printf("VISA\n");
         }
+        else
+        {
+            printf("INVALID\n");
+        }
+    }
+    else
+    {
+        // This handles unexpected card lengths, just in case
+        printf("INVALID\n");
     }
 
     return 0;
