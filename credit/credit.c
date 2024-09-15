@@ -6,26 +6,22 @@ int main(void)
     int length;
     long input;
 
-    // Calculate and loop until the length is 13, 15, or 16 only
-    do
+    // Prompt for input and check the length
+    input = get_long("Please enter your number here:\n ");
+    long temp = input;
+    length = 0;
+
+    while (temp != 0)
     {
-        input = get_long("Please enter your number here:\n ");
-        long temp = input;
-        length = 0;
-
-        while (temp != 0)
-        {
-            temp = temp / 10;
-            length++;
-        }
+        temp = temp / 10;
+        length++;
     }
-    while (length != 13 && length != 15 && length != 16);
 
-    // Check for valid length before proceeding to Luhn's algorithm
+    // Check for invalid length before proceeding to Luhn's algorithm
     if (length != 13 && length != 15 && length != 16)
     {
         printf("INVALID\n");
-        return 0;
+        return 0;  // Exit early if length is invalid
     }
 
     // Luhn's Checksum Calculation
