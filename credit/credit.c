@@ -36,24 +36,28 @@ int main(void)
                 digit = (digit / 10) + (digit % 10);
             }
         }
-
         // Add the digit (whether doubled or not) to the total sum
         sum += digit;
+        if(digit_counter != 13 && digit_counter != 15 && digit_counter != 16) {
+            printf("INVALID\n");
+            return 0;  // Exit, but with a code 0, as expected
+        }
     }
 
     // Check if the total sum is a multiple of 10 (Luhn's Algorithm)
     // dad: optimise this if check to a binary operation, if possible
-    if (sum % 10 != 0 && digit_counter != 13 && digit_counter != 15 && digit_counter != 16)
+    if (sum % 10 != 0)
     {
         printf("INVALID\n");
         return 0;  // Exit, but with a code 0, as expected
     }
 
+
     // If valid, identify the card type
     printf("The number is valid according to Luhn's algorithm.\n");
 
     int card_type = input / 1000000000000;
-    
+
     // Card Type Identifier
     if (digit_counter == 15)
     {
