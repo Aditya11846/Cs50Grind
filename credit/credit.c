@@ -38,7 +38,15 @@ int main(void)
     if(digit_counter%2 != 0)
     {
         digit *= 2;
+        if(digit>10)
+        {
+            digit = (digit/10) + (digit%10);
+        }
         sum += digit;
+    }
+    else
+    {
+        
     }
 
     }
