@@ -65,8 +65,22 @@ int main(void)
 
 
     // Card Type Identifier//
-    while(length == 15)
+    if(length == 15)
     {
-        
+        long amex = input/10000000000000;
+        if(amex == 34 || amex == 37)
+        {
+            printf("Amex\n");
+        }
+
+    }
+
+    if(length == 16)
+    {
+        long master = input/100000000000000
+        if(master>= 51 && master <= 55)
+        {
+            printf("MASTERCARD\n")
+        }
     }
 }
