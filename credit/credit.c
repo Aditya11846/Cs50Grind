@@ -55,6 +55,7 @@ int main(void)
     // Card Type Identifier
     if (digit_counter == 15)
     {
+        // dad: Is long really required ?
         long amex = input / 10000000000000;
         if (amex == 34 || amex == 37)
         {
