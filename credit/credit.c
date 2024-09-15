@@ -17,11 +17,6 @@ int main(void)
     }
 
     // Check for invalid length before proceeding to Luhn's algorithm
-    if (length != 13 && length != 15 && length != 16)
-    {
-        printf("INVALID\n");
-        return 0;  // Exit early if length is invalid
-    }
 
     // Luhn's Checksum Calculation
     long luhn_input = input;
