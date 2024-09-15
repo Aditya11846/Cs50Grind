@@ -27,6 +27,7 @@ int main(void)
     int digit_counter = 0;
     int digit;
 
+    luhn_input = luhn_input/10;
     digit = luhn_input%10;
 
 
