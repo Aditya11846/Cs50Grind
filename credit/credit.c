@@ -19,5 +19,6 @@ int main(void)
         length++;
     }
     }
-    while(length == 13 || length == 15 || length == 16 );
+    while(length != 13 && length != 15 && length != 16 );
+    
 }
