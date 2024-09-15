@@ -24,7 +24,8 @@ int main(void)
 
     //Luhn's Checksum//
     long luhn_input = input;
-    int digit_counter = 0; 
+    int digit_counter = 0;
 
-    luhn_input = luhn_input/10;
+    luhn_input = luhn_input%10;
+    
 }
