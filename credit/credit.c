@@ -27,8 +27,19 @@ int main(void)
     int digit_counter = 0;
     int digit;
 
-    luhn_input = luhn_input/10;
-    digit = luhn_input%10;
+    while()
+    {
 
+    luhn_input /= 10;
+    digit = luhn_input%10;
+    digit_counter++;
+    int sum;
+
+    if(digit_counter%2 != 0)
+    {
+        sum = digit*2;
+    }
+
+    }
 
 }
