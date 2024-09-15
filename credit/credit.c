@@ -77,10 +77,15 @@ int main(void)
 
     if(length == 16)
     {
-        long master = input/100000000000000
+        long master = input/100000000000000;
         if(master>= 51 && master <= 55)
         {
-            printf("MASTERCARD\n")
+            printf("MASTERCARD\n");
+        }
+
+        else
+        {
+            long Visa = input/1000000000000000;
         }
     }
 }
