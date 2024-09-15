@@ -22,5 +22,9 @@ int main(void)
     }
     while(length != 13 && length != 15 && length != 16 );
 
-    
+    //Luhn's Checksum//
+    long luhn_input = input;
+    int digit_counter = 0; 
+
+    luhn_input = luhn_input/10;
 }
