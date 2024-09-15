@@ -8,15 +8,6 @@ int main(void)
 
     // Prompt for input and check the length
     input = get_long("Please enter your number here:\n ");
-    long temp = input;
-
-    while (temp != 0)
-    {
-        temp = temp / 10;
-        length++;
-    }
-
-    // Check for invalid length before proceeding to Luhn's algorithm
 
     // Luhn's Checksum Calculation
     long luhn_input = input;
@@ -49,12 +40,17 @@ int main(void)
         // Add the digit (whether doubled or not) to the total sum
         sum += digit;
     }
-    
+
     // Check if the total sum is a multiple of 10 (Luhn's Algorithm)
     if (sum % 10 != 0)
     {
         printf("INVALID\n");
         return 0;  // Exit, but with a code 0, as expected
+    }
+    if (length != 13 && length != 15 && length != 16)
+    {
+        printf("INVALID\n");
+        return 0;  // Exit early if length is invalid
     }
 
     // If valid, identify the card type
