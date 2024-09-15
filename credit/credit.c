@@ -34,7 +34,7 @@ int main(void)
         // Extract the last digit
         digit = luhn_input % 10;
 
-        // Remove the last digit
+        // Extract the last digit
         luhn_input /= 10;
 
         digit_counter++;
