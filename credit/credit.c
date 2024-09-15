@@ -52,6 +52,7 @@ int main(void)
     // If valid, identify the card type
     printf("The number is valid according to Luhn's algorithm.\n");
 
+    int amex_or_ = input / 10000000000000;
     // Card Type Identifier
     if (digit_counter == 15)
     {
