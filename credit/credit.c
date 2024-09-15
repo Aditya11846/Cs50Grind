@@ -33,11 +33,12 @@ int main(void)
     luhn_input /= 10;
     digit = luhn_input%10;
     digit_counter++;
-    int sum;
+    int sum = 0;
 
     if(digit_counter%2 != 0)
     {
-        sum = digit*2;
+        digit *= 2;
+        sum += digit;
     }
 
     }
