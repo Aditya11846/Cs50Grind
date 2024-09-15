@@ -4,6 +4,6 @@
 int main(void)
 {
     long input = get_long("Please enter your number here:\n ");
+    int digit_count = 0;
     
-
 }
