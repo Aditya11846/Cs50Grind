@@ -48,7 +48,6 @@ int main(void)
     {
         sum+=digit;
     }
-
     }
 
 }
