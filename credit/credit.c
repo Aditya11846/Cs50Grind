@@ -53,50 +53,48 @@ int main(void)
     }
 
     // Check if the total sum is a multiple of 10
-    if (sum % 10 == 0)
-    {
-        printf("The number is valid according to Luhn's algorithm.\n");
-    }
-    else
+    if (sum % 10 != 0)
     {
         printf("The number is not valid according to Luhn's algorithm.\n");
+        return 1; // Exit the program if the card is invalid
     }
 
+    // If valid, identify the card type
+    printf("The number is valid according to Luhn's algorithm.\n");
 
-
-    // Card Type Identifier//
-    if(length == 15)
+    // Card Type Identifier
+    if (length == 15)
     {
-        long amex = input/10000000000000;
-        if(amex == 34 || amex == 37)
+        long amex = input / 10000000000000;
+        if (amex == 34 || amex == 37)
         {
-            printf("Amex\n");
+            printf("AMEX\n");
         }
-
     }
-
-    if(length == 16)
+    else if (length == 16)
     {
-        long master = input/100000000000000;
-        if(master>= 51 && master <= 55)
+        long mastercard = input / 100000000000000;
+        if (mastercard >= 51 && mastercard <= 55)
         {
             printf("MASTERCARD\n");
         }
-
         else
         {
-            long Visa = input/1000000000000000;
-            if(Visa == 4)
+            long visa = input / 1000000000000000;
+            if (visa == 4)
             {
-                printf("Visa\n");
+                printf("VISA\n");
             }
         }
-
     }
-
-    if(length == 13 )
+    else if (length == 13)
     {
-
-        printf("Visa\n");
+        long visa = input / 1000000000000;
+        if (visa == 4)
+        {
+            printf("VISA\n");
+        }
     }
+
+    return 0;
 }
