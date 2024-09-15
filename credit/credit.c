@@ -21,6 +21,13 @@ int main(void)
     }
     while (length != 13 && length != 15 && length != 16);
 
+    // Check for valid length before proceeding to Luhn's algorithm
+    if (length != 13 && length != 15 && length != 16)
+    {
+        printf("INVALID\n");
+        return 0;
+    }
+
     // Luhn's Checksum Calculation
     long luhn_input = input;
     int sum = 0;
@@ -52,11 +59,11 @@ int main(void)
         sum += digit;
     }
 
-    // Check if the total sum is a multiple of 10
+    // Check if the total sum is a multiple of 10 (Luhn's Algorithm)
     if (sum % 10 != 0)
     {
         printf("INVALID\n");
-        return 1; // Exit the program if the card is invalid
+        return 0;  // Exit, but with a code 0, as expected
     }
 
     // If valid, identify the card type
