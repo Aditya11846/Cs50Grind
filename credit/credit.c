@@ -4,7 +4,13 @@
 int main(void)
 {
     long input = get_long("Please enter your number here:\n ");
-    int digit_count = 0;
+    int length = 0;
+    long temp = input;
 
-    while digit_count()
+    while(temp!= 0)
+    {
+        temp = temp/10;
+        length++;
+    }
+    printf("%d",length);
 }
