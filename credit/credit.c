@@ -27,7 +27,7 @@ int main(void)
     int digit_counter = 0;
     int digit;
 
-    while()
+    while(luhn_input>0)
     {
 
     luhn_input /= 10;
@@ -43,11 +43,18 @@ int main(void)
             digit = (digit/10) + (digit%10);
         }
         sum += digit;
-    }
+
     else
     {
-        sum+=digit;
+        sum += digit;
     }
+    }
+
+    else
+    {
+        sum+= digit;
+    }
+
     }
 
 }
