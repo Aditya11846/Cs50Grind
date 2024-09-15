@@ -65,5 +65,8 @@ int main(void)
 
 
     // Card Type Identifier//
-    
+    while(length == 15)
+    {
+        
+    }
 }
