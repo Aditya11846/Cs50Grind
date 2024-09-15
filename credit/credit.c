@@ -3,13 +3,12 @@
 
 int main(void)
 {
-    int length;
+    int length=0;
     long input;
 
     // Prompt for input and check the length
     input = get_long("Please enter your number here:\n ");
     long temp = input;
-    length = 0;
 
     while (temp != 0)
     {
