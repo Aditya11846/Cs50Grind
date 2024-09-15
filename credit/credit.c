@@ -46,6 +46,7 @@ int main(void)
             // If doubling the digit makes it > 9, sum the digits of the product
             if (digit > 9)
             {
+                // It is graunteed that the resultant digit is always 2
                 digit = (digit / 10) + (digit % 10);
             }
         }
