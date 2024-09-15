@@ -55,7 +55,7 @@ int main(void)
     // Check if the total sum is a multiple of 10
     if (sum % 10 != 0)
     {
-        printf("The number is not valid according to Luhn's algorithm.\n");
+        printf("INVALID\n");
         return 1; // Exit the program if the card is invalid
     }
 
