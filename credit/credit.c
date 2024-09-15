@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    int digit_counter=0;
     long input;
 
     // Prompt for input and check the digit_counter
