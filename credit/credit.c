@@ -42,6 +42,7 @@ int main(void)
     }
 
     // Check if the total sum is a multiple of 10 (Luhn's Algorithm)
+    // dad: optimise this if check to a binary operation
     if (sum % 10 != 0 && digit_counter != 13 && digit_counter != 15 && digit_counter != 16)
     {
         printf("INVALID\n");
