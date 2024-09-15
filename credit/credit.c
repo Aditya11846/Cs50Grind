@@ -86,6 +86,17 @@ int main(void)
         else
         {
             long Visa = input/1000000000000000;
+            if(Visa == 4)
+            {
+                printf("Visa\n");
+            }
         }
+
+    }
+
+    if(length == 13 && Visa == 4)
+    {
+        
+        printf("Visa\n");
     }
 }
