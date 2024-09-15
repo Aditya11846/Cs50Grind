@@ -49,7 +49,7 @@ int main(void)
         // Add the digit (whether doubled or not) to the total sum
         sum += digit;
     }
-
+    
     // Check if the total sum is a multiple of 10 (Luhn's Algorithm)
     if (sum % 10 != 0)
     {
