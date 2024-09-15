@@ -6,6 +6,7 @@ int main(void)
     int length;
     long input;
 
+    //Calculate and loop length to be 13 , 15 or 16 only//
     do
     {
 
@@ -20,5 +21,6 @@ int main(void)
     }
     }
     while(length != 13 && length != 15 && length != 16 );
+
     
 }
