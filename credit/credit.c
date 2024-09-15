@@ -94,9 +94,9 @@ int main(void)
 
     }
 
-    if(length == 13 && Visa == 4)
+    if(length == 13 )
     {
-        
+
         printf("Visa\n");
     }
 }
