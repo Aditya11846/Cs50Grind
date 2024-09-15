@@ -3,8 +3,10 @@
 
 int main(void)
 {
-    long input = get_long("Please enter your number here:\n ");
     int length = 0;
+    do
+    {
+    long input = get_long("Please enter your number here:\n ");
     long temp = input;
 
     while(temp!= 0)
@@ -12,5 +14,6 @@ int main(void)
         temp = temp/10;
         length++;
     }
-    printf("%d",length);
+    }
+    while(length == 13 || length == 15 || length == 16 );
 }
