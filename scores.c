@@ -20,8 +20,10 @@ int main(void)
 float average(int array[])
 {
     int sum = 0;
-    for(i=0;i<N;i++)
+    for(int i = 0; i<N ; i++)
     {
-        sum = sum + array[i]
+        sum += array[i];
     }
+
+    return sum/(float) N;
 }
