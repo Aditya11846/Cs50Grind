@@ -4,9 +4,10 @@
 
 int main(void)
 {
-    int score1 = 72;
-    int score2 = 32;
-    int score3 = 86;
+    int scores[3];
+    scores[0]=72;
+    scores[1]=73;
+    scores[2]=33;
 
-    printf("Average = %f\n", (score1+score2+score3)/ (float) 3);
+    printf("Average = %f\n", (scores[0]+scores[1]+scores[2])/ (float) 3);
 }
