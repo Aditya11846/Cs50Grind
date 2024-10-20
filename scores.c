@@ -3,6 +3,7 @@
 
 float average(int array[]);
 const int N = 3;
+
 int main(void)
 {
 
@@ -17,5 +18,5 @@ int main(void)
 
 float average(int array[])
 {
-
+    sum
 }
