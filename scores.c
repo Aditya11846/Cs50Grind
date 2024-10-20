@@ -8,5 +8,5 @@ int main(void)
     int score2 = 34;
     int score3 = 86;
 
-    printf("Average = %f\n", (score1+score2+score3)/3.0);
+    printf("Average = %f\n", (score1+score2+score3)/3);
 }
