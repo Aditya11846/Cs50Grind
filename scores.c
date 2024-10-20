@@ -4,6 +4,9 @@
 
 int main(void)
 {
-    string name = get_string("What is your name : \n");
-    printf("Hello,%s\n", name);
+    int score1 = 72;
+    int score2 = 34;
+    int score3 = 86;
+
+    printf("Average = %f\n", (score1+score2+score3)/3.0);
 }
