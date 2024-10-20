@@ -5,5 +5,5 @@ int main(void)
 {
     string s = "HI!";
 
-    printf("%c %c %c %c",s[0],s[1],s[2],s[3]);
+    printf("%i %i %i %i",s[0],s[1],s[2],s[3]);
 }
